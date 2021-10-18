@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "towxml": "../../lib/towxml/towxml"
+  },
+  "navigationBarTitleText": "前端知识笔记总览",
+  "navigationBarBackgroundColor": "#83bbf8"
+}

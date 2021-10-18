@@ -1,0 +1,10 @@
+<view class='index-container'>
+  <view class='index-nav'>
+    <block wx:for="{{navItems}}" wx:key="id">
+      <view class='nav-item' bindtap="getListPage" data-id="{{item.id}}" data-text="{{item.text}}">
+        <cover-image src='{{item.imgSrc}}'></cover-image>
+        <text>{{item.text}}</text>
+      </view>
+    </block>
+  </view>
+</view>
