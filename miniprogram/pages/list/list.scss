@@ -1,0 +1,23 @@
+@import '../../theme/theme.scss';
+.list{
+    min-height: 100vh;
+    padding: 10px;
+    background-color: $bgColor;
+    .item{
+        position: relative;
+        background-color: #fff;
+        padding: 25px 20px 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        .num{
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0 10px;
+            border-radius: 0 10px 10px 0;
+            background-color: $themeColor;
+            color: #fff;
+            line-height: 16px;
+        }
+    }
+}

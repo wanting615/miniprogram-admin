@@ -1,3 +1,9 @@
 <view>
-    <towxml nodes="{{test}}"></towxml>
+   
+    <view class="list" wx:for="{{list}}" wx:key="id" wx:for-index="index">
+        <view class="item" bindtap="goDetailPage" data-index="{{index}}">
+            <view class="num"><text>{{index + 1}}</text></view>
+            <text>{{item.title}}</text>
+        </view>
+    </view>
 </view>

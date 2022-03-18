@@ -1,0 +1,10 @@
+<view class='index-container'>
+    <view class='index-nav'>
+      <block wx:for="{{docList}}" wx:key="id">
+        <view class='nav-item' bindtap="getListPage" data-id="{{item.id}}" data-text="{{item.name}}">
+          <cover-image src='{{baseUrl + item.iconUrl}}'></cover-image>
+          <text>{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>

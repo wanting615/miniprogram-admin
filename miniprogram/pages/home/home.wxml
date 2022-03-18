@@ -1,10 +1,14 @@
-<view class='index-container'>
-  <view class='index-nav'>
-    <block wx:for="{{navItems}}" wx:key="id">
-      <view class='nav-item' bindtap="getListPage" data-id="{{item.id}}" data-text="{{item.text}}">
-        <cover-image src='{{item.imgSrc}}'></cover-image>
-        <text>{{item.text}}</text>
-      </view>
-    </block>
+<l-capsule-bar home-page="../home/home" title="前端知识笔记总览" capsule-color="white" bg-color="transparent" hidden-capsule="true" l-title-class="tab-bar">
+  <image class="capsule-bar-bg" style="height:{{capsuleBarHeight}}rpx; width: 100%;" 
+  src="../../images/home/2.jpg" />
+  <view class='index-container'>
+    <view class='index-nav'>
+      <block wx:for="{{docList}}" wx:key="id">
+        <view class='nav-item' bindtap="getListPage" data-id="{{item.id}}" data-text="{{item.name}}">
+          <cover-image src='{{baseUrl + item.iconUrl}}'></cover-image>
+          <text>{{item.name}}</text>
+        </view>
+      </block>
+    </view>
   </view>
-</view>
+</l-capsule-bar>

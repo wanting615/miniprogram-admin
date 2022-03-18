@@ -1,6 +1,9 @@
+import { IAppOption } from "typings"
+
 // app.ts
 App<IAppOption>({
-  globalData: {},
+  globalData: {
+  },
   towxml: require("./lib/towxml/index"),
   onLaunch() {
     // 展示本地存储能力

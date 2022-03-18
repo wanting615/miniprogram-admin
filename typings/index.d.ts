@@ -1,6 +1,8 @@
 /// <reference path="./types/index.d.ts" />
 
-interface IAppOption {
+import { Doc } from "../miniprogram/type/doc";
+
+export interface IAppOption {
   globalData: {
     userInfo?: WechatMiniprogram.UserInfo,
   }

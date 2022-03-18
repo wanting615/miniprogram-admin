@@ -17,19 +17,16 @@
     "strict": true,
     "strictPropertyInitialization": true,
     "lib": ["ES2020"],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "typeRoots": [
       "./typings"
     ],
     "paths": {
-      "@/*": [
-        "miniprogram/*"
-      ]
     },
   },
   "include": [
     "./**/*.ts"
-  ],
+, "miniprogram/custom-tab-bar/index.ts"  ],
   "exclude": [
     "node_modules"
   ]

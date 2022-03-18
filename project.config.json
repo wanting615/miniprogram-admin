@@ -5,7 +5,7 @@
     },
     "miniprogramRoot": "miniprogram/",
     "compileType": "miniprogram",
-    "libVersion": "2.15.0",
+    "libVersion": "2.21.1",
     "projectname": "miniprogram-1",
     "setting": {
         "urlCheck": false,
@@ -16,7 +16,7 @@
         "minified": true,
         "newFeature": false,
         "coverView": true,
-        "nodeModules": false,
+        "nodeModules": true,
         "autoAudits": false,
         "showShadowRootInWxmlPanel": true,
         "scopeDataCheck": false,
@@ -51,5 +51,9 @@
     "simulatorType": "wechat",
     "simulatorPluginLibVersion": {},
     "appid": "wx2bf0a66848728f21",
+    "scripts": {
+        "beforeCompile": "",
+        "beforePreview": ""
+    },
     "condition": {}
 }

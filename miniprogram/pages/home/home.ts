@@ -1,34 +1,30 @@
-Page({
+import UrlService from "../../api/url";
+import { getDocTypeList } from "../../api/index";
+import { Data, Method } from "./type";
+import deviceUtil from "../../lin-ui/utils/device-util";
+
+Page<Data,Method>({
   data: {
-    navItems:[{
-      text: 'Html',
-      id: 1,
-      imgSrc: '/images/home/html.png'
-    }, {
-      text: 'Css',
-      id: 2,
-      imgSrc: '/images/home/css.png'
-    }, {
-      text: 'Js',
-      id: 3,
-      imgSrc: '/images/home/javascript.png'
-    }, {
-      text: 'Ts',
-      id: 4,
-      imgSrc: '/images/home/typescript.png'
-    }, {
-      text: 'Node',
-      id: 5,
-      imgSrc: '/images/home/node.png'
-    }, {
-      text: 'Network',
-      id: 6,
-      imgSrc: '/images/home/network.png'
-    }, {
-      text: '其它',
-      id: 7,
-      imgSrc: '/images/home/other.png'
-    }]
+    docList: [],
+    baseUrl: UrlService.baseUrl,
+    capsuleBarHeight: deviceUtil.getNavigationBarHeight()
+  },
+  onLoad(){
+    getDocTypeList().then(res => {
+      if(res.status){
+        this.setData({
+          docList: res.data
+        })
+      }
+    })
+  },
+  onShow() {
+    if (typeof this.getTabBar === 'function' &&
+      this.getTabBar()) {
+      this.getTabBar().setData({
+        selected: 0
+      })
+    }
   },
   getListPage(e:Event){
     const id = e.currentTarget.dataset['id'];
@@ -36,7 +32,7 @@ Page({
     wx.navigateTo({
       url: '../list/list',
       success: (res) => {
-        res.eventChannel.emit('acceptDataFromOpenerPage', { id, text})
+        res.eventChannel.emit('acceptDataFromOpenerPage', { id, text, type: 'home'})
       }
     })
   }

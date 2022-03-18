@@ -1,5 +1,8 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "前端知识笔记总览",
-  "navigationBarBackgroundColor": "#83bbf8"
+  "usingComponents": {
+    
+  },
+  "navigationBarTitleText": "",
+  "navigationBarBackgroundColor": "#83bbf8",
+  "navigationStyle": "custom"
 }

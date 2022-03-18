@@ -6,7 +6,9 @@
   "keywords": [],
   "author": "",
   "license": "",
-  "dependencies": {},
+  "dependencies": {
+    "lin-ui": "^0.9.4"
+  },
   "devDependencies": {
     "@types/node": "^16.10.3",
     "miniprogram-api-typings": "^2.8.3-1"

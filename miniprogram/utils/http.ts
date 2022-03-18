@@ -1,19 +1,19 @@
 interface Options{
-  url: string;
   params?: {
     [p in keyof any]: any
   },
   method?: 'GET' | 'POST' | 'PUT' | "HEAD" | 'DELETE',
 }
 
-const httpService = (option: Options) => {
+const httpService = <T>(url: string ,option?: Options): Promise<T> => {
+  option = option || {};
   return new Promise((resolve,reject) => {
     wx.request({
       header: { 'content-type': 'application/json'},
-      url: option.url,
-      data: option.params || {},
-      method: option.method || 'GET',
-      success: (res) => {
+      url: url,
+      data: option!.params || {},
+      method: option!.method || 'GET',
+      success: (res: any) => {
         if(res.statusCode === 200){
           resolve(res.data)
         }else{
