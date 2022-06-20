@@ -1,8 +1,8 @@
 import { Doc } from "../../../type/doc";
 const app = getApp();
-Page<{node: any},{}>({
+Page<{node: string},{}>({
     data: {
-        node: {}
+        node: ''
     },
     onLoad: function(){
         const eventChannel = this.getOpenerEventChannel();

@@ -1,7 +1,7 @@
 <view>
    
-    <view class="list" wx:for="{{list}}" wx:key="id" wx:for-index="index">
-        <view class="item" bindtap="goDetailPage" data-index="{{index}}">
+    <view class="list">
+        <view class="item" bindtap="goDetailPage"  wx:for="{{list}}" wx:key="id" wx:for-index="index" data-index="{{index}}">
             <view class="num"><text>{{index + 1}}</text></view>
             <text>{{item.title}}</text>
         </view>

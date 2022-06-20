@@ -27,6 +27,7 @@ Page<Data,Method>({
     }
   },
   getListPage(e:Event){
+      console.log(123)
     const id = e.currentTarget.dataset['id'];
     const text = e.currentTarget.dataset['text']
     wx.navigateTo({

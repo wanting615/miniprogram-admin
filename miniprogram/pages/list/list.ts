@@ -21,6 +21,7 @@ Page<Data, Method>({
   getDocs(id: number, type: string){
     const contentType = type === 'home' ? '知识点' : '问答题';
     getDocByType(id,contentType, this.data.page).then(res => {
+        console.log(res)
       let list  = this.data.list.concat(res.data);
       this.setData({
         list: list

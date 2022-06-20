@@ -1,9 +1,9 @@
 import UrlService from "../../api/url";
 import { getDocTypeList } from "../../api/index";
-import { data, method } from "../home/type";
+import { Data, Method } from "../home/type";
 import deviceUtil from "../../lin-ui/utils/device-util";
 
-Page<data,method>({
+Page<Data,Method>({
   data: {
     docList: [],
     baseUrl: UrlService.baseUrl,

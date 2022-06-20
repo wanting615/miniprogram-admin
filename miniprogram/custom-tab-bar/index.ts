@@ -18,13 +18,13 @@ Component({
                 selectedIconPath:"../images/icons/edit_fill.png"
             },
             {
-                pagePath:"/pages/exercises/index",
+                pagePath:"/pages/index/index",
                 text:"消息",
                 iconPath:"../images/icons/news.png",
                 selectedIconPath:"../images/icons/news_fill.png"
             },
             {
-                pagePath:"/pages/exercises/index",
+                pagePath:"/pages/my/my",
                 text:"我的",
                 iconPath:"../images/icons/my.png",
                 selectedIconPath:"../images/icons/my_fill.png"

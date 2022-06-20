@@ -1,5 +1,7 @@
 // index.ts
 
+import { IAppOption } from "typings"
+
 // 获取应用实例
 const app = getApp<IAppOption>()
 Page({
