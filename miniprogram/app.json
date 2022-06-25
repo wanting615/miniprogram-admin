@@ -1,13 +1,13 @@
 {
     "pages": [
         "pages/home/home",
-        "pages/list/list",
+        "pages/exercises/index",
         "pages/index/index",
         "pages/my/my",
-        "pages/logs/logs",
         "custom-tab-bar/index",
-        "pages/exercises/index",
-        "pages/list/doc-detail/docDetail"
+        "pages/public/list/list",
+        "pages/public/list/doc-detail/docDetail",
+        "pages/public/logs/logs"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -20,6 +20,7 @@
     "usingComponents": {
         "l-capsule-bar": "./lin-ui/capsule-bar/index"
     },
+    "lazyCodeLoading": "requiredComponents",
     "tabBar": {
         "custom": true,
         "color": "#7A7E83",

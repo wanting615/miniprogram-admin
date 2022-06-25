@@ -1,4 +1,5 @@
-import { Doc } from "../../../type/doc";
+import { getReadDoc } from "../../../../api/index";
+import { Doc } from "../../../../type/doc";
 const app = getApp();
 Page<{node: string},{}>({
     data: {
@@ -7,7 +8,7 @@ Page<{node: string},{}>({
     onLoad: function(){
         const eventChannel = this.getOpenerEventChannel();
         eventChannel.on('sendDocDetailData',(data: {doc: Doc}) => {
-            console.log(data)
+            getReadDoc(data.doc.id); //添加阅读量
             wx.setNavigationBarTitle({
                 title: data.doc.title
             })

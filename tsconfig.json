@@ -4,8 +4,8 @@
     "noImplicitAny": true,
     "module": "CommonJS",
     "target": "ES2020",
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
+    // "allowJs": true,
+    // "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "noImplicitThis": true,
@@ -27,10 +27,10 @@
   },
   "include": [
     "./**/*.ts",
-    "miniprogram/custom-tab-bar/index.ts"
   ],
   "exclude": [
     "node_modules",
-    "lin-ui"
+    "miniprogram/lin-ui",
+    "miniprogram/lib"
   ]
 }

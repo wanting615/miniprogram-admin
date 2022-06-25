@@ -3,9 +3,7 @@ import { DocType } from "../../type/doc";
 export interface Data {
     docList: DocType[];
     baseUrl: string;
-    // capsuleBarHeight: number;
-    background: string[];
-    customViewHeight: number;
+    capsuleBarHeight: number;
 }
 export interface Method {
     getListPage(e: Event): void;

@@ -1,4 +1,4 @@
-import { Doc } from "../../type/doc";
+import { Doc } from "../../../type/doc";
 
 export interface Data {
     id: number;//类型id

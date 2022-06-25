@@ -1,13 +1,29 @@
+.header{
+    position: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: red;
+}
+.swiper{
+    height: 180px;
+}
+.gap{
+    height: 10px;
+    background-color: #e5e5e5;
+}
 .index-container {
-  .index-nav{
-    padding: 10% 0;
-  }
   .nav-item{
     display: inline-block;
-    width: 33.3%;
-    margin-bottom: 10%;
+    width: 33%;
+    padding: 10% 0;
     font-size: 14px;
     text-align: center;
+    border-right: 0.5px solid #e5e5e5;
+    border-bottom: 0.5px solid #e5e5e5;
+    &:nth-child(3n){
+        border-right: none;
+    }
     cover-image{
       width: 30%;
       margin: 0 auto 10px;

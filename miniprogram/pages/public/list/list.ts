@@ -1,5 +1,5 @@
-import { Doc } from "../../type/doc";
-import { getDocByType } from "../../api/index";
+import { Doc } from "../../../type/doc";
+import { getDocByType } from "../../../api/index";
 import{ Data, Method} from "./type";
 Page<Data, Method>({
   data: {

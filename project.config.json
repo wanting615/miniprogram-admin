@@ -45,7 +45,10 @@
             "typescript",
             "sass"
         ],
-        "scopeDataCheck": false
+        "scopeDataCheck": false,
+        "useStaticServer": true,
+        "ignoreUploadUnusedFiles": false,
+        "ignoreDevUnusedFiles": false
     },
     "simulatorType": "wechat",
     "simulatorPluginLibVersion": {},
