@@ -20,5 +20,35 @@
             color: #fff;
             line-height: 16px;
         }
+        .title{
+            font-size: 32rpx;
+        }
+        .item-info{
+            padding-top: 20rpx;
+            font-size: 24rpx;
+            overflow: hidden;
+            color: #aaa;
+            .time{
+                float: left;
+            }
+            .view,.reply{
+                float: right;
+            }
+            .view{
+                margin-right: 20rpx;
+            }
+            image {
+                width: 36rpx;
+                height: 36rpx;
+                vertical-align: middle;
+            }
+            text{
+                vertical-align: middle;
+            }
+        }
     }
+}
+.noData{
+    background-color: #f3f3f3;
+    text-align: center;
 }

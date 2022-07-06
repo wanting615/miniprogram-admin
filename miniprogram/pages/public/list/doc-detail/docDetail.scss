@@ -1,0 +1,15 @@
+.widgets{
+    position: fixed;
+    right: 10px;
+    bottom: 100rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: #acacac;
+    image{
+        width: 60rpx;
+        height: 60rpx;
+    }
+    .active{
+        color: #ea6f5a;
+    }
+}

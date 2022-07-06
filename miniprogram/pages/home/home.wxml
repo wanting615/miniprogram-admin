@@ -1,8 +1,4 @@
-<!-- <l-capsule-bar home-page="../home/home" title="前端知识笔记总览" capsule-color="white" bg-color="transparent" hidden-capsule="true" l-title-class="tab-bar">
-    <image class="capsule-bar-bg" style="height:{{capsuleBarHeight}}rpx; width: 100%;" 
-    src="../../images/home/2.jpg" /> -->
-    <view class="header" style="height: {{customViewHeight}}px;top: ">
-    </view>
+    <headerComponet title="前端知识汇总" bgUrl="url(https://wanting615.com.cn/header.jpg)"></headerComponet>
     <view class="page-section page-section-spacing swiper">
         <swiper indicator-dots="true" duration="1000" circular="true" indicator-color="#ea6f5a" class="swiper">
             <block wx:for="{{background}}" wx:key="*this">
@@ -16,10 +12,9 @@
         <view class='index-nav'>
             <block wx:for="{{docList}}" wx:key="id">
                 <view class='nav-item' bindtap="getListPage" data-id="{{item.id}}" data-text="{{item.name}}">
-                <cover-image src='{{item.iconUrl}}'></cover-image>
+                <cover-image src='{{baseUrl + item.iconUrl}}'></cover-image>
                 <text>{{item.name}}</text>
                 </view>
             </block>
         </view>
     </view>
-<!-- </l-capsule-bar> -->

@@ -1,0 +1,19 @@
+<view style="background: #f1f1f1; height: 100vh;">
+    <view class="tips">个人能力有限,非常感谢您的反馈!</view>
+    <form catchsubmit="formSubmit">
+        <input type="text" value="{{doc.id}}" name="id" style="display: none;"/>
+        <textarea 
+        name="info"
+        placeholder="请输入您宝贵的意见"
+        confirm-type="done"
+        auto-focus
+        ></textarea>
+        <view class="autor">
+            <text>您的称呼</text>
+            <input type="text" maxlength="6" name="autor" placeholder="请输入你的称呼"/>
+        </view>
+        <view>
+            <button form-type="submit" hover-class="none"> 提交 </button>
+        </view>
+    </form>
+</view>

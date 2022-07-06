@@ -15,8 +15,10 @@ export interface DocType {
     typeName?: string,//文档类型名称
     contentType: string;//文档内容类型
     content: string;//内容
+    praises: number; //点赞数
+    views: number; // 观看数
     autor: string;//作者
-    creatAt: Date;//创建时间
+    creatAt: string;//创建时间
   }
   
   export interface DocForm {

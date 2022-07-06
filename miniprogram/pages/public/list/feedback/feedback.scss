@@ -1,0 +1,30 @@
+.tips{
+    padding: 6rpx 30rpx;
+    background-color: #ff6a00;
+    color: #fff;
+    text-align: center;
+}
+textarea{
+    width: 100%;
+    padding: 30rpx;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dedede;
+    margin: 0 auto;
+    height: 800rpx;
+    background-color: #fff;
+}
+.autor{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 30rpx;
+    input{
+        flex: 1;
+        padding-left: 20rpx;
+    }
+}
+button{
+    margin-top: 50rpx;
+    background-color: #ff6a00;
+    color: #fff;
+}

@@ -1,0 +1,6 @@
+<view class="custom_head" style="height:{{navHeight}}px;background: {{bgUrl}};background-size: 100% auto;">
+  <view class="flex-row" style="height:{{capsuleHeight}}px;padding-top:{{navTop}}px;line-height: {{navObj}}px;">
+    <view class="title">{{title}}</view>
+  </view>
+</view>
+<view class="custom_cas" style="height: {{navHeight}}px;"></view>

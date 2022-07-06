@@ -1,45 +1,37 @@
+import { updateUserInfo } from "./../../utils/user";
+
+const app = getApp<IAppOption>();
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    isLogin: app.globalData.isLogin,
+    nickName: app.globalData.userInfo.nickName ? app.globalData.userInfo.nickName : '未设置昵称',
+    itemList: [
+        {title: '我的足迹',icon: '../../images/icon/history.png'},
+        {title: '我的收藏',icon: '../../images/icon/collect.png'},
+        {title: '我的反馈',icon: '../../images/icon/write.png'}
+    ],
+    bottomList: [
+      {title: '敲一夜代码', icon: '../../images/icon/my.png'},
+      {title: '流两行老泪', icon: '../../images/icon/set.png'},
+      {title: '用三种语言', icon: '../../images/icon/tag.png'},
+      {title: '唯四肢受罪', icon: '../../images/icon/feedback.png'},
+      {title: '待五更鸡鸣', icon: '../../images/icon/praise.png'},
+      {title: '遇骤雨初歇', icon: '../../images/icon/classify.png'}
+    ]
   },
   // 事件处理函数
-  bindViewTap() {
-    wx.navigateTo({
-      url: '../logs/logs',
-    })
-  },
-  onLoad() {
-    // @ts-ignore
-    if (wx.getUserProfile) {
-      this.setData({
-        canIUseGetUserProfile: true
-      })
+  onShow() {
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+        this.getTabBar().setData({
+            selected: 3
+        })
     }
   },
   getUserProfile() {
-    // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
-    wx.getUserProfile({
-      desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      success: (res) => {
-        console.log(res)
+    updateUserInfo((nickName: string) => {
         this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
+            nickName
         })
-      }
-    })
-  },
-  getUserInfo(e: any) {
-    // 不推荐使用getUserInfo获取用户信息，预计自2021年4月13日起，getUserInfo将不再弹出弹窗，并直接返回匿名的用户个人信息
-    console.log(e)
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+    });
   }
 })

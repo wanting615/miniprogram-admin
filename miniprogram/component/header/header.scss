@@ -1,0 +1,21 @@
+.custom_head {
+    width: 750rpx;
+    background: #7ED1AC;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  
+  .flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .title{
+    font-size: 30rpx;
+    font-weight: bold;
+  }

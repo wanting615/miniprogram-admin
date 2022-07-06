@@ -1,5 +1,5 @@
 /*! *****************************************************************************
-Copyright (c) 2021 Tencent, Inc. All rights reserved.
+Copyright (c) 2022 Tencent, Inc. All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -32,7 +32,11 @@ declare namespace WechatMiniprogram.Page {
     type Options<
         TData extends DataOption,
         TCustom extends CustomOption
-    > = (TCustom & Partial<Data<TData>> & Partial<ILifetime>) &
+    > = (TCustom &
+        Partial<Data<TData>> &
+        Partial<ILifetime> & {
+            options?: Component.ComponentOptions
+        }) &
         ThisType<Instance<TData, TCustom>>
     type TrivialInstance = Instance<IAnyObject, IAnyObject>
     interface Constructor {

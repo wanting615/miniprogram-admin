@@ -1,4 +1,14 @@
 
 <view>
     <towxml nodes="{{node}}"></towxml>
+    <view class="widgets">
+        <view style="margin-bottom: 20rpx;" bindtap="praise">
+            <image src="../../../../images/icon/praise.png"></image>
+            <view class="{{isPraised ? 'active' : ''}}">{{praises}}</view>
+        </view>
+        <view bindtap="feedback">
+            <image src="../../../../images/icon/edit.png"></image>
+            <view>反馈</view>
+        </view>
+    </view>
 </view>

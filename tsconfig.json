@@ -30,7 +30,7 @@
   ],
   "exclude": [
     "node_modules",
-    "miniprogram/lin-ui",
-    "miniprogram/lib"
+    "./miniprogram/lin-ui",
+    "./miniprogram/lib",
   ]
 }

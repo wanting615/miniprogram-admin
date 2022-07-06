@@ -1,22 +1,31 @@
-import { IAppOption } from "typings"
+import { getUserInfo } from "./api/index";
+import { login} from "./utils/user";
 
 // app.ts
 App<IAppOption>({
   globalData: {
+      isLogin: false,
+      userInfo: {
+          nickName: '',
+          avatarUrl: '',
+          views: [],
+          praises: []
+      }
   },
   towxml: require("./lib/towxml/index"),
   onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
-    wx.login({
-      success: res => {
-        console.log(res.code)
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      },
+    wx.getStorage({
+        key: 'token',
+        success: (res) => {
+            this.globalData.token = res.data as string; 
+            this.globalData.isLogin = true;
+            getUserInfo(this.globalData.token).then(res => {
+                this.globalData.userInfo = res.data;
+            });
+        },
+        fail: () => {
+            login()
+        }
     })
   },
 })

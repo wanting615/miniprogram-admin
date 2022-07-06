@@ -1,8 +1,8 @@
 {
   "usingComponents": {
-    
+    "headerComponet": "../../component/header/header"
   },
-  "navigationBarTitleText": "",
+  "navigationBarTitleText": "前端小程序",
   "navigationBarBackgroundColor": "#83bbf8",
   "navigationStyle": "custom"
 }

@@ -7,7 +7,8 @@
         "custom-tab-bar/index",
         "pages/public/list/list",
         "pages/public/list/doc-detail/docDetail",
-        "pages/public/logs/logs"
+        "pages/public/logs/logs",
+        "pages/public/list/feedback/feedback"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -17,9 +18,7 @@
     },
     "style": "v2",
     "sitemapLocation": "sitemap.json",
-    "usingComponents": {
-        "l-capsule-bar": "./lin-ui/capsule-bar/index"
-    },
+    "usingComponents": {},
     "lazyCodeLoading": "requiredComponents",
     "tabBar": {
         "custom": true,

@@ -1,7 +1,6 @@
 import UrlService from "../../api/url";
 import { getDocTypeList } from "../../api/index";
 import { Data, Method } from "./type";
-// import deviceUtil from "../../lin-ui/utils/device-util.js";
 
 Page<Data,Method>({
     onShareAppMessage(){
@@ -10,19 +9,10 @@ Page<Data,Method>({
     data: {
         docList: [],
         baseUrl: UrlService.baseUrl,
-        // capsuleBarHeight: deviceUtil.getNavigationBarHeight(),
-        background: ["../../images/home/swiper1.jpg","../../images/home/swiper2.jpg"],
-        customViewHeight: 0
+        background: ["https://wanting615.com.cn/swiper1.jpg","https://wanting615.com.cn/swiper2.jpg"],
+        customViewHeight: 0 //胶囊高度
     },
     onLoad(){
-        wx.getSystemInfo({
-            success: (res) => {
-                console.log(res)
-                this.setData({
-                    customViewHeight: res.statusBarHeight
-                })
-            }
-        })
         getDocTypeList().then(res => {
         if(res.status){
             this.setData({

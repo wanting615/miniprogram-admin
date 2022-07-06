@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "towxml": "../../../../lib/towxml/towxml"
-  }
+  },
+  "navigationBarBackgroundColor": "#ea6f5a"
 }
