@@ -17,6 +17,12 @@ declare global{
         towxml?: any
             
     }
+    // 接口返回数据
+    export interface RootResult<T>{
+        status: boolean;
+        message: string;
+        data: T,
+    }
 }
 
 export interface UserInfo{

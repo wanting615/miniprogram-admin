@@ -9,10 +9,10 @@ Page<Data,Method>({
   },
   onLoad(){
     getDocTypeList().then(res => {
-      console.log(res)
       if(res.status){
+        const data = res.data.filter(item => item.contentTypes[1])
         this.setData({
-          docList: res.data
+          docList: data
         })
       }
     })
@@ -28,7 +28,7 @@ Page<Data,Method>({
     const id = e.currentTarget.dataset['id'];
     const text = e.currentTarget.dataset['text']
     wx.navigateTo({
-      url: '../list/list',
+      url: '../public/doc-list/doc-list',
       success: (res) => {
         res.eventChannel.emit('acceptDataFromOpenerPage', { id, text, type:'exercises'})
       }

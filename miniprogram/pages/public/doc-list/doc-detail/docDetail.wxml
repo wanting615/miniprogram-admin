@@ -1,5 +1,5 @@
 
-<view>
+<view style="padding-bottom: 50rpx;">
     <towxml nodes="{{node}}"></towxml>
     <view class="widgets">
         <view style="margin-bottom: 20rpx;" bindtap="praise">

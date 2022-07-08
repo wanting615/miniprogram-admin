@@ -12,7 +12,6 @@ Page<Data, Method>({
             this.setData({
                 doc: data.doc
             })
-            console.log(this.data.doc)
             wx.setNavigationBarTitle({
                 title: data.doc.title
             })
@@ -30,7 +29,6 @@ Page<Data, Method>({
         }
 
         feedBack(app.globalData.token,e.detail.value.docId, e.detail.value.info, e.detail.value.autor).then(res => {
-            console.log(res);
         })
     }
 })

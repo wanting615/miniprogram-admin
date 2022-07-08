@@ -14,7 +14,7 @@
         </view>
         <view class="tips">一个今天胜过两个明天!</view>
         <view class="reader-info" >
-            <view class="reader-item" wx:for="{{itemList}}" wx:key="index">
+            <view class="reader-item" wx:for="{{itemList}}" wx:key="index" bindtap="goPage" data-url="{{item.url}}">
                 <cover-image src="{{item.icon}}"></cover-image>
                 <view class="gray">{{item.title}}</view>
             </view>
@@ -22,11 +22,9 @@
     </view>
 </view>
 <view class="bottom">
-    <block wx:for="{{bottomList}}" wx:key="index">
-        <view class="bottom-item">
-            <cover-image src="{{item.icon}}"></cover-image>
-            <view class="title">{{item.title}}</view>
-            <cover-image src="../../images/icon/forward.png"></cover-image>
-        </view>
-    </block>
+    <view class="bottom-item" wx:for="{{bottomList}}" wx:key="index" bindtap="goPage" data-url="{{item.url}}">
+        <cover-image src="{{item.icon}}"></cover-image>
+        <view class="title">{{item.title}}</view>
+        <cover-image src="../../images/icon/forward.png"></cover-image>
+    </view>
 </view>

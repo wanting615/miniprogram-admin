@@ -11,4 +11,6 @@ export default class UrlService{
     public static sendWxUserInfo = UrlService.baseUrl + "updateUserInfo"; // 更新用户信息
     public static getUserInfo = UrlService.baseUrl + "getUserInfo"; // 获取用户信息
     public static feedback = UrlService.baseUrl + "wxFeedback"; //微信问题反馈
+    public static getViews = UrlService.baseUrl + "getViews"; // 获取浏览历史记录
+    public static getPraised = UrlService.baseUrl + "getPraised"; // 获取点赞记录
 }

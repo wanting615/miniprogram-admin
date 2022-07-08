@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "listComponent": "../../../component/list-component/listComponent"
+    },
+    "navigationBarTitleText": "我的足迹",
+    "navigationBarBackgroundColor": "#ea6f5a",
+    "navigationBarTextStyle": "white"
+}

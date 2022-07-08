@@ -35,7 +35,7 @@ Page<{node: string; praises: number, doc: Doc | null, isPraised: boolean},
         if(this.data.isPraised){ return };
         getPraises(this.data.doc!.id, app.globalData.token).then(res => {
             if(res.status){
-                let praises = this.data.praises = 1;
+                let praises = this.data.praises + 1;
                 this.setData({
                     praises: praises,
                     isPraised: true

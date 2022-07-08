@@ -1,0 +1,20 @@
+<view class="list">
+    <view class="item" bindtap="goDetailPage" wx:for="{{list}}" wx:key="id" wx:for-index="index" data-index="{{index}}">
+        <view class="num"><text>{{index + 1}}</text></view>
+        <view>
+            <text class="title">{{item.title}}</text>
+            <view class="item-info">
+                <view class="time">{{item.typeName}} {{item.creatAt}}</view>
+                <view class="reply">
+                    <image src="../../images/icon/reply.png"></image>
+                    <text> {{item.praises}}</text>
+                </view>
+                <view class="view" >
+                    <image src="../../images/icon/view.png"></image>
+                    <text> {{item.views}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view wx:if="{{noData}}" class="noData">没有更多了~</view>

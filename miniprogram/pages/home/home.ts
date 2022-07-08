@@ -32,7 +32,7 @@ Page<Data,Method>({
         const id = e.currentTarget.dataset['id'];
         const text = e.currentTarget.dataset['text']
         wx.navigateTo({
-        url: '../public/list/list',
+        url: '../public/doc-list/doc-list',
         success: (res) => {
             res.eventChannel.emit('acceptDataFromOpenerPage', { id, text, type: 'home'})
         }

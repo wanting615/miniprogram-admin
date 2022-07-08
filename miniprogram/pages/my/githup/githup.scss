@@ -1,0 +1,30 @@
+.container-view{
+    text-align: center;
+    .item{
+        padding: 20rpx;
+        text-align: center;
+        margin-bottom: 20px;
+        .title{
+            margin-bottom: 10px;
+            font-size: 32rpx;
+            font-weight: bold;
+        }
+        .link{
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-bottom: 10px;
+            background-color: #ececec;
+            border-radius: 10px;
+        }
+        .button{
+            width: 70%;
+            padding: 10px;
+            margin: 0 auto;
+            background: #ea6f5a;
+            color: #fff;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+    }
+}

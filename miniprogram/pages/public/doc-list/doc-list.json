@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+      "listComponent": "../../../component/list-component/listComponent"
   },
   "navigationBarTitleText": "",
   "navigationBarBackgroundColor": "#ea6f5a",

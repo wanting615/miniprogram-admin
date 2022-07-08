@@ -42,7 +42,6 @@ const updateUserInfo = (success:(nickName: string) => void) => {
         }
       },
       fail: (res) => {
-          console.log(res)
       }
   })
 }

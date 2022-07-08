@@ -8,10 +8,8 @@ export interface Data {
     list: Doc[];//文档列表
     stopLoadFlag: boolean;
     noData: boolean;
-    idText: string;
 }
 export interface Method {
     getDocs(): void;
-    goDetailPage(e: Event): void;
     loadmore(): void;
 }

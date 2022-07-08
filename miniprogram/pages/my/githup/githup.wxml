@@ -1,0 +1,7 @@
+<view class="container-view">
+    <view class="item" wx:for="{{itemList}}" wx:key="*this" bindtap="copyLink" data-link="{{item.link}}">
+        <view class="title">小程序githup地址</view>
+        <view class="link">https://github.com/wanting615/miniprogram-admin.git</view>
+        <view class="button">复制地址</view>
+    </view>
+</view>

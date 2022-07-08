@@ -5,10 +5,13 @@
         "pages/index/index",
         "pages/my/my",
         "custom-tab-bar/index",
-        "pages/public/list/list",
-        "pages/public/list/doc-detail/docDetail",
+        "pages/public/doc-list/doc-list",
+        "pages/public/doc-list/doc-detail/docDetail",
         "pages/public/logs/logs",
-        "pages/public/list/feedback/feedback"
+        "pages/public/doc-list/feedback/feedback",
+        "pages/my/history/history",
+        "pages/my/praise/praise",
+        "pages/my/githup/githup"
     ],
     "window": {
         "backgroundTextStyle": "light",

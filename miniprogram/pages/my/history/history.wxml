@@ -1,0 +1,5 @@
+<view>
+    <scroll-view scroll-y bindscrolltolower="loadmore" style="height: {{listHeight}}px;">
+        <listComponent list="{{list}}" noData="{{noData}}"></listComponent>
+    </scroll-view>
+</view>
