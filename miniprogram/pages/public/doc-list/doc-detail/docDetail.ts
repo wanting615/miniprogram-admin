@@ -18,7 +18,7 @@ Page<{node: string; praises: number, doc: Doc | null, isPraised: boolean},
                 title: data.doc.title
             })
             let result = app.towxml(data.doc.content,'markdown'); //设置内容
-
+            console.log(result)
             if(app.globalData.userInfo.praises.includes(data.doc.id)){
                 this.setData({
                     isPraised: true

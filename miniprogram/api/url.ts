@@ -6,6 +6,7 @@ export default class UrlService{
     public static getDocByType = UrlService.baseUrl + "getDocByType";//获取某类型的文档
     public static getReadDoc = UrlService.baseUrl + "getReadDoc"; //添加阅读量
     public static getPraises = UrlService.baseUrl + "getPraises"; //点赞
+    public static getNewsDoc = UrlService.baseUrl + "getNewsDoc"; //获取最新文档
     //------------------ user --------------------
     public static login = UrlService.baseUrl + 'wxLogin'; // 登录
     public static sendWxUserInfo = UrlService.baseUrl + "updateUserInfo"; // 更新用户信息

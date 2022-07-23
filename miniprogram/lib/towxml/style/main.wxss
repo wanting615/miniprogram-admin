@@ -12,6 +12,7 @@
 .h2w__main {
     margin: 0 40rpx 40rpx 40rpx;
     padding-top: 40rpx;
+    font-family:-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif,SimHei,SimSun;
 }
 
 /**标题**/
@@ -279,6 +280,7 @@
 /**内连元素**/
 .h2w__a,
 .h2w__span,
+.h2w__s,
 .h2w__b,
 .h2w__strong,
 .h2w__i,

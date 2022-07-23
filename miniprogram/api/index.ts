@@ -23,6 +23,10 @@ export const getPraises = (id: number, token?: string) => {
     return httpService<RootResult<Doc[]>>(UrlService.getPraises, { params: {id,token}})
 }
 
+//获取最新文档
+export const getNewsDoc = (page: number) => {
+    return httpService<RootResult<Doc[]>>(UrlService.getNewsDoc, { params: { page }});
+}
 // -------------------------- user 用户相关 ----------------------
 // 登录
 export const loginUser = (code: string) => {

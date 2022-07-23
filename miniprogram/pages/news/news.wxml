@@ -1,0 +1,14 @@
+
+    <!-- <scroll-view scroll-y bindscrolltolower="loadmore" style="height: {{listHeight}}px;"> -->
+        <view class="list container">
+            <view class="list-item" wx:for="{{docs}}" wx:key="id" >
+                <view class="image-box">
+                    <image src="{{baseUrl + 'assets/logos/' + item.typeName + '-logo.jpg'}}" mode="widthFix"></image>
+                </view>
+                <view class="text">
+                    <view class="title">{{item.title}}</view>
+                    <view class="time">2022-06-09</view>
+                </view>
+            </view>
+        </view>
+    <!-- </scroll-view> -->

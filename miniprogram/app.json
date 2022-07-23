@@ -2,7 +2,7 @@
     "pages": [
         "pages/home/home",
         "pages/exercises/index",
-        "pages/index/index",
+        "pages/news/news",
         "pages/my/my",
         "custom-tab-bar/index",
         "pages/public/doc-list/doc-list",
@@ -41,8 +41,8 @@
                 "selectedIconPath": "images/icons/edit_fill.png"
             },
             {
-                "pagePath": "pages/index/index",
-                "text": "消息",
+                "pagePath": "pages/news/news",
+                "text": "动态",
                 "iconPath": "images/icons/news.png",
                 "selectedIconPath": "images/icons/news_fill.png"
             },

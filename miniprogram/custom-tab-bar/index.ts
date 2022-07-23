@@ -18,8 +18,8 @@ Component({
                 selectedIconPath:"../images/icons/edit_fill.png"
             },
             {
-                pagePath:"/pages/index/index",
-                text:"消息",
+                pagePath:"/pages/news/news",
+                text:"动态",
                 iconPath:"../images/icons/news.png",
                 selectedIconPath:"../images/icons/news_fill.png"
             },
